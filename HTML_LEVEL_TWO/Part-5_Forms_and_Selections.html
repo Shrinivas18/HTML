@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotel Feedback</title>
+  </head>
+
+  <body>
+    <h1>Hotel Feedback Form</h1>
+
+    <form method="get">
+
+      <h3>Are you from inside the India ? or outside the India</h3>
+
+      <!-- Here suppose we make a radio button for inside -->
+      <label for="inusa">Inside:</label>
+      <input id="inusa" type="radio" name="" value="">
+
+      <!-- Here suppose we make a radio button for outside -->
+      <label for="outusa">Outside:</label>
+      <input id="outusa" type="radio" name="" value="">
+
+    </form>
+
+    <!-- Note : after this code while surfing the pade you will notice that
+    inside and outside both can be selected simultaneously.Which is incorrect.
+    For rectifying this problem the name attribute plays a major role.lets
+    find out how.-->
+    <form method="get">
+
+      <label for="inusa">Inside</label>
+      <input id="inusa" type="radio" name="loc" value="">
+
+      <label for="outusa">Outside</label>
+      <input id="outusa" type="radio" name="loc" value="">
+
+      <!-- Here the name attribute for both the input is same,
+      i.e, only one of them can be selected at a time.Basically they both
+      are linked together-->
+
+
+      <h2>How was the service?</h2>
+      <!-- Now this how selections are used  -->
+      <select name="Stars-">
+        <option value="Great">3</option>
+        <option value="Okay">2</option>
+        <option value="bad">1</option>
+      </select>
+
+      <input type="submit" name="" value="Submit">
+
+      <!-- Suppose you want to add some feedback for that purpose textarea can
+           be useful -->
+      <h2>Any other feedback</h2>
+      <textarea name="mytext" rows="8" cols="80"></textarea>
+      <input type="submit" name="" value="Submit">
+    </form>
+  </body>
+</html>
