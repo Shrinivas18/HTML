@@ -1,2 +1,2 @@
-# HTML_Basics
-Here are some basics of HTML.
+# HTML
+Here are some basics to advance levels of HTML.
